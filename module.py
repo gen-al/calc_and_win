@@ -57,6 +57,7 @@ def run_game():
     }
     replay = input('Чтобы сыграть ещё раз, введи "y"; '
                    'если не хочешь продолжать игру, введи "n": ')
+    
     if replay not in yes_no:
         raise ValueError('Такой команды в игре нет.')
     return yes_no[replay]
